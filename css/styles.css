@@ -72,3 +72,46 @@ body.dark-mode {
     padding: 10px;
     cursor: pointer;
 }
+/* Basic styles for navigation menu */
+#nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style for the menu toggle button */
+#nav-toggle {
+    display: none; /* Initially hide if not needed */
+}
+
+/* Example media query to show the toggle button on small screens */
+@media (max-width: 768px) {
+    #nav-menu {
+        display: none; /* Hide menu by default on small screens */
+        position: absolute;
+        top: 60px; /* Adjust as necessary */
+        background: #fff;
+        width: 100%;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    #nav-menu.show {
+        display: block; /* Show menu when toggle is active */
+    }
+    
+    #nav-toggle {
+        display: block; /* Show toggle button on small screens */
+    }
+}
