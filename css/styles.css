@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Header styles */
 header {
     background: #333;
     color: #fff;
@@ -12,9 +14,11 @@ header {
     text-align: center;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -27,34 +31,54 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main content styles */
 main {
     padding: 20px;
 }
 
+/* Footer styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
-    bottom: 0;
+    position: relative; /* Changed from absolute to relative */
     width: 100%;
 }
+
+/* Navigation menu styles */
 #nav-menu {
-    display: none;
+    list-style: none; /* Updated from list-style-type */
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
 }
 
-#nav-menu.show {
-    display: block;
+#nav-menu li {
+    display: block; /* Changed from inline for better layout on small screens */
+    margin: 0;
 }
 
-#nav-toggle {
+#nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navigation toggle button styles */
+#nav-toggle, #theme-toggle {
     background-color: #333;
     color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
+
+#nav-toggle {
+    display: none; /* Initially hidden */
+}
+
+/* Light and dark mode styles */
 body.light-mode {
     background-color: #fff;
     color: #000;
@@ -65,37 +89,7 @@ body.dark-mode {
     color: #fff;
 }
 
-#theme-toggle {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-/* Basic styles for navigation menu */
-#nav-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#nav-menu li {
-    display: inline;
-    margin-right: 15px;
-}
-
-#nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Style for the menu toggle button */
-#nav-toggle {
-    display: none; /* Initially hide if not needed */
-}
-
-/* Example media query to show the toggle button on small screens */
+/* Responsive styles */
 @media (max-width: 768px) {
     #nav-menu {
         display: none; /* Hide menu by default on small screens */
