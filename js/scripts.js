@@ -26,3 +26,15 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
         body.classList.add('light-mode');
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    navToggle.addEventListener('click', () => {
+        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+            navMenu.style.display = 'block';
+        } else {
+            navMenu.style.display = 'none';
+        }
+    });
+});
