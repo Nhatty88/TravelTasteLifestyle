@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Taste Lifestyle Blog</title>
+    <meta name="description" content="Explore the world of travel, food, and lifestyle with our blog. Get the best tips, reviews, and recommendations for your next adventure.">
+    <meta name="keywords" content="Travel blog, food blog, lifestyle blog, travel tips, food reviews, cafe reviews, resort reviews">
+    <meta name="author" content="Your Name">
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #007ACC;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        /* Main Content Area */
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Content Area */
+        .content {
+            flex: 3;
+            padding: 20px;
+            background: white;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #f1f1f1;
+            margin-left: 20px;
+        }
+
+        .sidebar .widget {
+            margin-bottom: 20px;
+        }
+
+        .sidebar .widget h3 {
+            background-color: #007ACC;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .widget ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .sidebar .widget ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007ACC;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Image Slider */
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .slider img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Rating Section */
+        .rating {
+            margin: 20px 0;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            float: left;
+            width: 20px;
+            background: #ccc;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin-right: 2px;
+            padding: 5px 0;
+            cursor: pointer;
+        }
+
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            background: #f90;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                margin: 20px 0 0 0;
+            }
+        }
+    </style>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Travel Taste Lifestyle Blog",
+        "description": "Explore travel destinations, food reviews, and lifestyle tips.",
+        "url": "https://traveltastelifestyle.blogspot.com",
+        "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://www.twitter.com/yourpage",
+            "https://www.instagram.com/yourpage"
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Travel Taste Lifestyle",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yourlogoimageurl.com/logo.png"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Travel Taste Lifestyle</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <!-- Image Slider -->
+            <div class="slider">
+                <img src="https://yourimageurl.com/slide1.jpg" alt="Travel Destination 1">
+                <img src="https://yourimageurl.com/slide2.jpg" alt="Travel Destination 2">
+                <img src="https://yourimageurl.com/slide3.jpg" alt="Travel Destination 3">
+            </div>
+
+            <!-- Blog Post Content Here -->
+            <article>
+                <h2>Latest Adventures</h2>
+                <p>Your latest travel, food, and lifestyle blog content goes here...</p>
+            </article>
+
+            <!-- Rating Section -->
+            <div class="rating">
+                <input type="radio" name="star" id="star1"><label for="star1">&#9733;</label>
+                <input type="radio" name="star" id="star2"><label for="star2">&#9733;</label>
+                <input type="radio" name="star" id="star3"><label for="star3">&#9733;</label>
+                <input type="radio" name="star" id="star4"><label for="star4">&#9733;</label>
+                <input type="radio" name="star" id="star5"><label for="star5">&#9733;</label>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Popular Posts</h3>
+                <ul>
+                    <li><a href="#post1">Post Title 1</a></li>
+                    <li><a href="#post2">Post Title 2</a></li>
+                    <li><a href="#post3">Post Title 3</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/yourpage">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/yourpage">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/yourpage">Instagram</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Taste Lifestyle. All rights reserved.</p>
+    </footer>
+</body>
+</html>
